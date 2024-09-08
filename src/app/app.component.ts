@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { TaskListComponent } from "./task-list.component";
+import { FormsModule } from "@angular/forms";
+
 
 @Component({
   selector: 'app-root',
+  template: `
+  <h1>task manager</h1>
+  <app-task-list> </app-task-list>
+  `,
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [TaskListComponent , FormsModule],
 })
+
 export class AppComponent {
-  title = 'task-manager';
 }
