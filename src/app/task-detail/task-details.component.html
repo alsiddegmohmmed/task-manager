@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="task-details">
+    <h2>Task Details</h2>
+    <p><strong>Name:</strong> {{ task.name }}</p>
+    <p><strong>Priority:</strong> {{ task.priority }}</p>
+    <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+    <p><strong>Completed:</strong> {{ task.isCompleted ? 'Yes' : 'No' }}</p>
+  </div>
+
+</body>
+</html>
